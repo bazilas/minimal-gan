@@ -1,8 +1,8 @@
-# Minimal GAN in TensorFlow - 101 lines
+# Minimal GAN in TensorFlow - 111 lines
 This is an implementation of a Generative Adversarial Network (GAN) in [TensorFlow](http://tensorflow.org). The example is based on the original work from [Goodfellow et. al. ](https://arxiv.org/abs/1406.2661), where the generator learns to reconstruct samples from the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset.
 
 ## Dependencies
-The code has been tested in [TensorFlow](http://tensorflow.org) 1.3 (Python 3.6, CPU, macOS). It should work in other platforms as well. Also, it makes use of  [TensorFlow-Slim](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim).
+The code has been tested in [TensorFlow](http://tensorflow.org) 1.4 (Python 3.6, CPU, macOS). It should work in other platforms as well. Also, it makes use of  [TensorFlow-Slim](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/slim).
 
 ## Execution
 
