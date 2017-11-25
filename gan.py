@@ -2,9 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import os
+import argparse
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 from tensorflow.examples.tutorials.mnist import input_data
+
+# Choose dataset
+parser = argparse.ArgumentParser()
+parser.add_argument("--dataset", default='mnist', help="Options: mnist or fashio-mnist")
+args = parser.parse_args()
 
 # Noise dimensions
 zdim = 50
@@ -18,8 +24,12 @@ x = tf.placeholder(tf.float32, shape=[None, 784])
 # Input to the generator
 z = tf.placeholder(tf.float32, shape=[None, zdim])
 
-# Load MNIST data
-mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
+# Load data
+if args.dataset is 'mnist':
+    mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
+else:
+    mnist = input_data.read_data_sets('Fashion-MNIST_data', one_hot=True,
+                                  source_url='http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/')
 
 # Define the generator
 def generator(input, is_training=True, reuse=False):

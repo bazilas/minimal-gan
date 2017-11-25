@@ -8,11 +8,16 @@ The code has been tested in [TensorFlow](http://tensorflow.org) 1.3 (Python 3.6,
 
 Run the following script:
 
-    $ python gan.py
+    $ python gan.py mnist
+    $ python gan.py fashion-mnist
 
-The results after ~200k iterations should look like the following:
+The results of MNIST after ~200k iterations should look like the following:
 
 ![result](figures/0178000.png)
+
+The result of fahsion-MNIST after ~300k iterations, should like the following:
+
+![result](figures/0302000.png)
 
 ## Acknowledgement
 Two helpful repositories with several GAN implmentations are [wiseodd](https://github.com/wiseodd/generative-models) and [hwalsuklee](https://github.com/hwalsuklee/tensorflow-generative-model-collections). This implementation drew inspiration from the aformentioned repositories.
