@@ -23,7 +23,7 @@ The result of fahsion-MNIST after ~300k iterations, should like the following:
 Two helpful repositories with several GAN implmentations are [wiseodd](https://github.com/wiseodd/generative-models) and [hwalsuklee](https://github.com/hwalsuklee/tensorflow-generative-model-collections). This implementation drew inspiration from the aformentioned repositories.
 
 ## License
-Copyright (c) 2017,  V. Belagiannis
+Copyright (c) 2020, Vasileios Belagiannis
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
